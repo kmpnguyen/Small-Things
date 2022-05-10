@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>Small Things</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.min.js"></script>
+    
+</head>
+<body onload="disableScroll()">
+	<div class="blackline"></div>
+
+	<div id="title">
+		<p class="tittle-100">100</p>
+		<div class="title-text">
+			<p style="margin:0;font-size: 13vw;line-height: 14vw;">Small Things in Silence</p>
+			<p style="margin:0;font-size: 2.5vw;line-height: 2.5vw; position: relative;bottom: 10px;">Is a study of shape and noise in p5.js with the final form of a collection of 100 generative framed butterfly. <br>
+			Its forming process is like a butterfly going through different peculiar phrases before transform into a beautiful thing.</p>
+			<div id="menu">
+				<p id="home" style="margin:0;font-size: 13vw;line-height: 7vw; padding-right:2vw; text-decoration: underline;" onclick="disableScroll()">Home</p>
+				<p id="index" style="margin:0;font-size: 13vw;line-height: 7vw; padding-right:2vw; " onclick="enableScroll()">Index</p>
+				<a href="https://editor.p5js.org/siththetooth/sketches/YzDQ7n61o" style="text-decoration: none; margin:0;font-size: 13vw;line-height: 7vw;color: black;padding-right:2vw">Script</a>
+			</div>
+
+
+			<!-- <ul>
+			  <li class="menu--item__one">
+			    <a style="margin:0;font-size: 13vw;line-height: 7vw;"onclick="menu()">Home</a>
+			  </li>
+			  <li class="menu--item__two">
+			    <a style="margin:0;font-size: 13vw;line-height: 7vw;"onclick="enableScroll()">Index</a>
+			  </li>
+			  <li class="menu--item__three">
+			    <a href="https://editor.p5js.org/siththetooth/sketches/YzDQ7n61o" style="text-decoration: none; margin:0;font-size: 13vw;line-height: 7vw;color: black;">Script</a>
+			  </li>
+			  <li class="bottom__line">
+
+			  </li>
+			</ul> -->
+
+
+		</div>
+	</div>
+
+	<div id="slider">
+		<img src="img/myCanvas-2.png" class="image-slider">
+		<img src="img/myCanvas-2.png" class="image-slider">
+		<img src="img/myCanvas-2.png" class="image-slider">
+		<img src="img/myCanvas-2.png" class="image-slider">
+		<img src="img/myCanvas-2.png" class="image-slider">
+		<img src="img/myCanvas-2.png" class="image-slider">
+		<img src="img/myCanvas-2.png" class="image-slider">
+		<img src="img/myCanvas-2.png" class="image-slider">
+		<img src="img/myCanvas-2.png" class="image-slider">
+	</div>
+
+	<div id="gallery">
+	<div id="gallery_container">
+	<div class="row__circle" style=" margin-top: 1vw;margin-bottom:5.5vw;"></div>	
+	<div class="row__circle" style=" margin-bottom:5.5vw;"></div>	
+	<div class="row__circle" style=" margin-bottom:5.5vw;"></div>	
+	<div class="row__circle" style=" margin-bottom:5.5vw;"></div>	
+
+	<div class="row__circle"></div>	
+	 <container class="container">
+	 	<img src="img/myCanvas.png" onclick="onClick(this)" class="gallery__img">
+	 	<p class="gallery__text">ColorButterfly: #A4C1F0<br>
+			ColorBorder: #FF5428<br>
+			MaxRecursion: 26.11<br>
+			MouseX: -2.37<br>
+			MouseY: 0.53
+		</p>
+	 </container>
+	 <container class="container">
+	 	<img src="img/myCanvas-2.png" onclick="onClick(this)" class="gallery__img">
+	 	<p class="gallery__text">ColorButterfly: #A4C1F0<br>
+			ColorBorder: #FF5428<br>
+			MaxRecursion: 26.11<br>
+			MouseX: -2.37<br>
+			MouseY: 0.53
+		</p>
+	 </container>
+	 <container class="container">
+	 	<img src="img/myCanvas-3.png" onclick="onClick(this)" class="gallery__img">
+	 	<p class="gallery__text">ColorButterfly: #A4C1F0<br>
+			ColorBorder: #FF5428<br>
+			MaxRecursion: 26.11<br>
+			MouseX: -2.37<br>
+			MouseY: 0.53
+		</p>
+	 </container>
+	 <container class="container">
+	 	<img src="img/myCanvas-4.png" onclick="onClick(this)" class="gallery__img">
+	 	<p class="gallery__text">ColorButterfly: #A4C1F0<br>
+			ColorBorder: #FF5428<br>
+			MaxRecursion: 26.11<br>
+			MouseX: -2.37<br>
+			MouseY: 0.53
+		</p>
+	 </container>
+	 <container class="container">
+	 	<img src="img/myCanvas-5.png" onclick="onClick(this)" class="gallery__img">
+	 	<p class="gallery__text">ColorButterfly: #A4C1F0<br>
+			ColorBorder: #FF5428<br>
+			MaxRecursion: 26.11<br>
+			MouseX: -2.37<br>
+			MouseY: 0.53
+		</p>
+	 </container>
+
+	 <div class="row__circle"></div>	
+	 <container class="container">
+	 	<img src="img/myCanvas.png" onclick="onClick(this)" class="gallery__img">
+	 	<p class="gallery__text">ColorButterfly: #A4C1F0<br>
+			ColorBorder: #FF5428<br>
+			MaxRecursion: 26.11<br>
+			MouseX: -2.37<br>
+			MouseY: 0.53
+		</p>
+	 </container>
+	 <container class="container">
+	 	<img src="img/myCanvas-2.png" onclick="onClick(this)" class="gallery__img">
+	 	<p class="gallery__text">ColorButterfly: #A4C1F0<br>
+			ColorBorder: #FF5428<br>
+			MaxRecursion: 26.11<br>
+			MouseX: -2.37<br>
+			MouseY: 0.53
+		</p>
+	 </container>
+	 <container class="container">
+	 	<img src="img/myCanvas-3.png" onclick="onClick(this)" class="gallery__img">
+	 	<p class="gallery__text">ColorButterfly: #A4C1F0<br>
+			ColorBorder: #FF5428<br>
+			MaxRecursion: 26.11<br>
+			MouseX: -2.37<br>
+			MouseY: 0.53
+		</p>
+	 </container>
+	 <container class="container">
+	 	<img src="img/myCanvas-4.png" onclick="onClick(this)" class="gallery__img">
+	 	<p class="gallery__text">ColorButterfly: #A4C1F0<br>
+			ColorBorder: #FF5428<br>
+			MaxRecursion: 26.11<br>
+			MouseX: -2.37<br>
+			MouseY: 0.53
+		</p>
+	 </container>
+	 <container class="container">
+	 	<img src="img/myCanvas-5.png" onclick="onClick(this)" class="gallery__img">
+	 	<p class="gallery__text">ColorButterfly: #A4C1F0<br>
+			ColorBorder: #FF5428<br>
+			MaxRecursion: 26.11<br>
+			MouseX: -2.37<br>
+			MouseY: 0.53
+		</p>
+	 </container>
+
+	 <div class="row__circle"></div>	
+	 <container class="container">
+	 	<img src="img/myCanvas.png" class="gallery__img" alt="Image 1">
+	 	<p class="gallery__text">ColorButterfly: #A4C1F0<br>
+			ColorBorder: #FF5428<br>
+			MaxRecursion: 26.11<br>
+			MouseX: -2.37<br>
+			MouseY: 0.53
+		</p>
+	 </container>
+	 <container class="container">
+	 	<img src="img/myCanvas-2.png" class="gallery__img" alt="Image 1">
+	 	<p class="gallery__text">ColorButterfly: #A4C1F0<br>
+			ColorBorder: #FF5428<br>
+			MaxRecursion: 26.11<br>
+			MouseX: -2.37<br>
+			MouseY: 0.53
+		</p>
+	 </container>
+	 <container class="container">
+	 	<img src="img/myCanvas-3.png" class="gallery__img" alt="Image 1">
+	 	<p class="gallery__text">ColorButterfly: #A4C1F0<br>
+			ColorBorder: #FF5428<br>
+			MaxRecursion: 26.11<br>
+			MouseX: -2.37<br>
+			MouseY: 0.53
+		</p>
+	 </container>
+	 <container class="container">
+	 	<img src="img/myCanvas-4.png" class="gallery__img" alt="Image 1">
+	 	<p class="gallery__text">ColorButterfly: #A4C1F0<br>
+			ColorBorder: #FF5428<br>
+			MaxRecursion: 26.11<br>
+			MouseX: -2.37<br>
+			MouseY: 0.53
+		</p>
+	 </container>
+	 <container class="container">
+	 	<img src="img/myCanvas-5.png" class="gallery__img" alt="Image 1">
+	 	<p class="gallery__text">ColorButterfly: #A4C1F0<br>
+			ColorBorder: #FF5428<br>
+			MaxRecursion: 26.11<br>
+			MouseX: -2.37<br>
+			MouseY: 0.53
+		</p>
+	 </container>
+
+	 <div class="row__circle"></div>	
+	 <container class="container">
+	 	<img src="img/myCanvas.png" onclick="onClick(this)" class="gallery__img">
+	 	<p class="gallery__text">ColorButterfly: #A4C1F0<br>
+			ColorBorder: #FF5428<br>
+			MaxRecursion: 26.11<br>
+			MouseX: -2.37<br>
+			MouseY: 0.53
+		</p>
+	 </container>
+	 <container class="container">
+	 	<img src="img/myCanvas-2.png" onclick="onClick(this)" class="gallery__img">
+	 	<p class="gallery__text">ColorButterfly: #A4C1F0<br>
+			ColorBorder: #FF5428<br>
+			MaxRecursion: 26.11<br>
+			MouseX: -2.37<br>
+			MouseY: 0.53
+		</p>
+	 </container>
+	 <container class="container">
+	 	<img src="img/myCanvas-3.png" onclick="onClick(this)" class="gallery__img">
+	 	<p class="gallery__text">ColorButterfly: #A4C1F0<br>
+			ColorBorder: #FF5428<br>
+			MaxRecursion: 26.11<br>
+			MouseX: -2.37<br>
+			MouseY: 0.53
+		</p>
+	 </container>
+	 <container class="container">
+	 	<img src="img/myCanvas-4.png" onclick="onClick(this)" class="gallery__img">
+	 	<p class="gallery__text">ColorButterfly: #A4C1F0<br>
+			ColorBorder: #FF5428<br>
+			MaxRecursion: 26.11<br>
+			MouseX: -2.37<br>
+			MouseY: 0.53
+		</p>
+	 </container>
+	 <container class="container">
+	 	<img src="img/myCanvas-5.png" onclick="onClick(this)" class="gallery__img">
+	 	<p class="gallery__text">ColorButterfly: #A4C1F0<br>
+			ColorBorder: #FF5428<br>
+			MaxRecursion: 26.11<br>
+			MouseX: -2.37<br>
+			MouseY: 0.53
+		</p>
+	 </container>
+
+	 <div class="row__circle"></div>	
+	 <container class="container">
+	 	<img src="img/myCanvas.png" onclick="onClick(this)" class="gallery__img">
+	 	<p class="gallery__text">ColorButterfly: #A4C1F0<br>
+			ColorBorder: #FF5428<br>
+			MaxRecursion: 26.11<br>
+			MouseX: -2.37<br>
+			MouseY: 0.53
+		</p>
+	 </container>
+	 <container class="container">
+	 	<img src="img/myCanvas-2.png" onclick="onClick(this)" class="gallery__img">
+	 	<p class="gallery__text">ColorButterfly: #A4C1F0<br>
+			ColorBorder: #FF5428<br>
+			MaxRecursion: 26.11<br>
+			MouseX: -2.37<br>
+			MouseY: 0.53
+		</p>
+	 </container>
+	 <container class="container">
+	 	<img src="img/myCanvas-3.png" onclick="onClick(this)" class="gallery__img">
+	 	<p class="gallery__text">ColorButterfly: #A4C1F0<br>
+			ColorBorder: #FF5428<br>
+			MaxRecursion: 26.11<br>
+			MouseX: -2.37<br>
+			MouseY: 0.53
+		</p>
+	 </container>
+	 <container class="container">
+	 	<img src="img/myCanvas-4.png" onclick="onClick(this)" class="gallery__img">
+	 	<p class="gallery__text">ColorButterfly: #A4C1F0<br>
+			ColorBorder: #FF5428<br>
+			MaxRecursion: 26.11<br>
+			MouseX: -2.37<br>
+			MouseY: 0.53
+		</p>
+	 </container>
+	 <container class="container">
+	 	<img src="img/myCanvas-5.png" onclick="onClick(this)" class="gallery__img">
+	 	<p class="gallery__text">ColorButterfly: #A4C1F0<br>
+			ColorBorder: #FF5428<br>
+			MaxRecursion: 26.11<br>
+			MouseX: -2.37<br>
+			MouseY: 0.53
+		</p>
+	 </container>
+
+	 <div class="row__circle"></div>	
+	 <container class="container">
+	 	<img src="img/myCanvas.png" onclick="onClick(this)" class="gallery__img">
+	 	<p class="gallery__text">ColorButterfly: #A4C1F0<br>
+			ColorBorder: #FF5428<br>
+			MaxRecursion: 26.11<br>
+			MouseX: -2.37<br>
+			MouseY: 0.53
+		</p>
+	 </container>
+	 <container class="container">
+	 	<img src="img/myCanvas-2.png" onclick="onClick(this)" class="gallery__img">
+	 	<p class="gallery__text">ColorButterfly: #A4C1F0<br>
+			ColorBorder: #FF5428<br>
+			MaxRecursion: 26.11<br>
+			MouseX: -2.37<br>
+			MouseY: 0.53
+		</p>
+	 </container>
+	 <container class="container">
+	 	<img src="img/myCanvas-3.png" onclick="onClick(this)" class="gallery__img">
+	 	<p class="gallery__text">ColorButterfly: #A4C1F0<br>
+			ColorBorder: #FF5428<br>
+			MaxRecursion: 26.11<br>
+			MouseX: -2.37<br>
+			MouseY: 0.53
+		</p>
+	 </container>
+	 <container class="container">
+	 	<img src="img/myCanvas-4.png" onclick="onClick(this)" class="gallery__img">
+	 	<p class="gallery__text">ColorButterfly: #A4C1F0<br>
+			ColorBorder: #FF5428<br>
+			MaxRecursion: 26.11<br>
+			MouseX: -2.37<br>
+			MouseY: 0.53
+		</p>
+	 </container>
+	 <container class="container">
+	 	<img src="img/myCanvas-5.png" onclick="onClick(this)" class="gallery__img">
+	 	<p class="gallery__text">ColorButterfly: #A4C1F0<br>
+			ColorBorder: #FF5428<br>
+			MaxRecursion: 26.11<br>
+			MouseX: -2.37<br>
+			MouseY: 0.53
+		</p>
+	 </container>
+
+	 
+	</div>
+</div>
+
+<div id="modal01" class="modal" onclick="this.style.display='none'">
+  <span class="close">Close</span>
+  <div class="modal-content">
+    <img id="img01" style="max-width:90%">
+  </div>
+</div>
+
+<script src="sketch.js"></script>
+</body>
+</html>
